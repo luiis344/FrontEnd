@@ -1,0 +1,392 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #007BFF;
+}
+
+nav {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav a.btn-clientes {
+  background-color: #28a745;
+  color: white;
+}
+
+nav a.btn-produtos {
+  background-color: #007BFF;
+  color: white;
+}
+
+nav a.btn-pedidos {
+  background-color: #ffc107;
+  color: white;
+}
+
+nav a.btn-pedidos:hover {
+  background-color: #e0a800;
+}
+
+button.btn-editar {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+button.btn-editar:hover {
+  background-color: #e0a800;
+}
+
+button.btn-excluir {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.btn-excluir:hover {
+  background-color: #c82333;
+}
+
+.btn-atualizar {
+  background-color: #ffc107;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-atualizar:hover {
+  background-color: #e0a800;
+}
+
+.btn-cadastrar {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cadastrar:hover {
+  background-color: #218838;
+}
+
+.btn-cancelar {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cancelar:hover {
+  background-color: #c82333;
+}
+
+
+nav a {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+nav a i {
+  font-size: 1.5rem;
+}
+
+
+
+
+nav a.btn-clientes:hover {
+  background-color: #888321;
+}
+
+nav a.btn-produtos:hover {
+  background-color: #0056b3;
+}
+
+nav a.btn-pedidos {
+  background-color: #0056b3;
+  color: white;
+}
+
+nav a.btn-pedidos:hover {
+  background-color: #0056b3;
+}
+
+button.btn-primary {
+  background-color: #28a745;
+  color: white;
+}
+
+button.btn-primary:hover {
+  background-color: #28a745;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #007BFF;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+button.btn-editar {
+  background-color: #ffc107;
+  color: white;
+}
+
+button.btn-editar:hover {
+  background-color: #e0a800;
+}
+
+button.btn-excluir {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.btn-excluir:hover {
+  background-color: #c82333;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+select[multiple] {
+  height: auto;
+  min-height: 120px;
+}
+
+input:focus,
+select:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: rgb(251, 244, 244);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #28a745;
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #007BFF;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+table button {
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-editar {
+  background-color: #ffc107;
+  color: white;
+}
+
+button.btn-editar:hover {
+  background-color: #e0a800;
+}
+
+button.btn-excluir {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.btn-excluir:hover {
+  background-color: #c82333;
+}
+
+
+table button {
+  font-size: 14px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin-bottom: 15px;
+  }
+
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td::before {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+
+
+
+  #produtos-table td::before { content: "ID"; }
+  #produtos-table td:nth-of-type(2)::before { content: "Nome"; }
+  #produtos-table td:nth-of-type(3)::before { content: "Preço"; }
+  #produtos-table td:nth-of-type(4)::before { content: "Ações"; }
+
+  #clientes-table td::before { content: "ID"; }
+  #clientes-table td:nth-of-type(2)::before { content: "Nome"; }
+  #clientes-table td:nth-of-type(3)::before { content: "E-mail"; }
+  #clientes-table td:nth-of-type(4)::before { content: "Ações"; }
+
+  #pedidos-table td::before { content: "ID"; }
+  #pedidos-table td:nth-of-type(2)::before { content: "Clientes"; }
+  #pedidos-table td:nth-of-type(3)::before { content: "Produtos"; }
+  #pedidos-table td:nth-of-type(5)::before { content: "Ações"; }
+}
